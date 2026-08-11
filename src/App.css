@@ -109,6 +109,24 @@
   font-size: 14px;
 }
 
+.property-header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.primary-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.primary-button:hover {
+  background: var(--accent-hover);
+}
+
 .logout-button {
   padding: 8px 16px;
   border: 1px solid var(--border);
@@ -146,7 +164,93 @@
 }
 
 .property-area {
-  margin: 0;
+  margin: 0 0 12px;
   color: var(--text-muted);
   font-size: 14px;
+}
+
+.property-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.secondary-button {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+  font-weight: 600;
+}
+
+.secondary-button:hover {
+  background: var(--bg);
+}
+
+.delete-button {
+  padding: 6px 12px;
+  border: 1px solid var(--danger);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.delete-button:hover {
+  background: var(--danger);
+  color: #fff;
+}
+
+/* 物件の登録・編集フォーム */
+.property-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 420px;
+  padding: 24px;
+  margin-bottom: 24px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.property-form h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.property-form label {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.property-form input {
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.property-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.property-form-actions button[type='submit'] {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.property-form-actions button[type='submit']:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.property-form-actions button[type='submit']:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
